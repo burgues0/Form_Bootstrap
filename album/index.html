@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Formulário</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Sobre</h4>
+          <p class="text-muted">Remodelagem do template "album" proporcionado pelo Bootstrap 5.1.3, visando montar um formulário mais apelativo visualmente.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <strong>Exercício Formulário</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">MINE HORTA VALE VERDE</h1>
+      </div>
+    </div>
+  </section>
+
+  <form action="formInfo.php" method="post">
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="container fs-5">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <label class="form-label">Data</label><br>
+              <input type="date" name="data" class="rounded border border-dark" required>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-2">
+              <label class="form-label">N°</label><br>
+              <input type="text" class="form-control border border-dark" name="numeroID" placeholder="ex.: 19" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="container fs-5">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <label for="inputFirma" class="form-label">Firma</label>
+              <input type="text" class="form-control border border-dark" id="inputFirma" name="firma" placeholder="ex.: Mine Horta Vale Verde" required>
+            </div>
+            <div class="col-md-6">
+              <label for="inputEndereco" class="form-label">Endereço</label>
+              <input type="text" class="form-control border border-dark" id="inputEndereco" name="endereco" placeholder="ex.: Rua General Canabarro" required>
+            </div>
+            <div class="col-md-2">
+              <label for="inputComplemento" class="form-label">Complemento</label>
+              <input type="text" class="form-control border border-dark" id="inputComplemento" name="complemento" placeholder="ex.: 485/Pavilhão 1" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="container fs-5">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <label for="inputBairro" class="form-label">Bairro</label>
+              <input type="text" class="form-control border border-dark" id="inputBairro" name="bairro" placeholder="ex.: Maracanã" required>
+            </div>
+            <div class="col-md-4">
+              <label for="inputCidade" class="form-label">Cidade</label>
+              <input type="text" class="form-control border border-dark" id="inputCidade" name="cidade" placeholder="ex.: Rio de Janeiro" required>
+            </div>
+            <div class="col-md-4">
+              <label for="inputEstado" class="form-label">Estado</label>
+              <select class="form-select border border-dark" aria-label="Default select example" name="estados" required>
+                <option selected>Selecione o Estado</option>
+                <option value="Acre">AC</option>
+                <option value="Alagoas">AL</option>
+                <option value="Amapá">AP</option>
+                <option value="Amazonas">AM</option>
+                <option value="Bahia">BA</option>
+                <option value="Ceará">CE</option>
+                <option value="Distrito Federal">DF</option>
+                <option value="Espírito Santo">ES</option>
+                <option value="Goiás">GO</option>
+                <option value="Maranhão">MA</option>
+                <option value="Mato Grosso">MT</option>
+                <option value="Mato Grosso do Sul">MS</option>
+                <option value="Minas Gerais">MG</option>
+                <option value="Pará">PA</option>
+                <option value="Paraíba">PB</option>
+                <option value="Paraná">PR</option>
+                <option value="Pernambuco">PE</option>
+                <option value="Piauí">PI</option>
+                <option value="Rio de Janeiro">RJ</option>
+                <option value="Rio Grande do Norte">RN</option>
+                <option value="Rio Grande do Sul">RS</option>
+                <option value="Rondônia">RO</option>
+                <option value="Roraima">RR</option>
+                <option value="Santa Catarina">SC</option>
+                <option value="São Paulo">SP</option>
+                <option value="Sergipe">SE</option>
+                <option value="Tocantins">TO</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="container fs-5">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <label for="inputCEP" class="form-label">CEP</label>
+              <input type="text" class="form-control border border-dark" id="inputCEP" name="cep" placeholder="ex.: 20271-204" required>
+            </div>
+            <div class="col-md-4">
+              <label for="inputCNPJ" class="form-label">CNPJ</label>
+              <input type="text" class="form-control border border-dark" id="inputCNPJ" name="cnpj" placeholder="ex.: 42.441.758/0001-05" required>
+            </div>
+            <div class="col-md-4">
+              <label for="inputInscr" class="form-label">Inscrição</label>
+              <input type="text" class="form-control border border-dark" id="inputInscr" name="inscricao" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="container fs-5">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control border border-dark" id="inputEmail" name="email" placeholder="ex.: direg@cefet-rj.br" required>
+            </div>
+            <div class="col-md-3">
+              <label for="inputTel" class="form-label">Telefone</label>
+              <input type="text" class="form-control border border-dark" id="inputTel" name="telefone" placeholder="ex.: (21) 2568-8890" required>
+            </div>
+            <div class="col-md-3">
+              <label for="inputCel" class="form-label">Celular</label>
+              <input type="text" class="form-control border border-dark" id="inputCel" name="celular" placeholder="ex.: (21) 98422-6875" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="container fs-5">
+          <div class="row g-3">
+            <div class="col-md-12">
+              <label for="inputObs" class="form-label">Observações</label>
+              <textarea class="form-control border border-dark" id="inputObs" name="obs" rows="5" placeholder="Digite aqui alguma informação adicional."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="container fs-5">
+          <div class="row g-3">
+            <div class="col-md-12">
+              <div class="form-check">
+                <input class="form-check-input border border-dark" type="checkbox" name="concordo" id="termAndCondCheck" value="" required>
+                <label class="form-check-label" for="termAndCondCheck">Eu li e concordo com os <a href="#">Termos e Condições de Uso</a></label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container fs-5">
+          <div class="row g-3">
+            <div class="col-md-2">
+              <input class="btn btn-outline-primary" type="submit" value="Enviar">
+              <input class="btn btn-outline-primary" type="reset" value="Redefinir">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Topo da página</a>
+    </p>
+    <p class="mb-1">A utilização do exemplo Album da ferramenta &copy; Bootstrap, foi meramente educacional, com </p>
+    <p class="mb-1">o objetivo de aprender a utilizar a ferramenta e melhorar a proficiência no desenvolvimento web!</p>
+    <p class="mb-0"> <a href="/">Visite a página</a> para conhecer mais, ou leia o <a href="../getting-started/introduction/">guia para novos usuários</a>.</p>
+  </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
